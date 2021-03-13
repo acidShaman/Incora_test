@@ -9,6 +9,7 @@ apiview = "*"
 django-cors-headers = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+mysqlclient = "*"
 
 [dev-packages]
 

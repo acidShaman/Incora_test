@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'login'
+    'login',
+    'feed',
+    'article'
 ]
 
 MIDDLEWARE = [
@@ -84,8 +86,12 @@ WSGI_APPLICATION = 'Incora_test.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'incora_test',
+        'USER': 'root',
+        'PASSWORD': 'qazwsxedc',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 

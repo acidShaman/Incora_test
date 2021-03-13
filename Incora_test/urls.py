@@ -21,5 +21,6 @@ import login
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('login.urls')),
-    path('feed/', include('feed.urls'))
+    path('feed/', include('feed.urls')),
+    path('article/', include('article.urls'))
 ]
